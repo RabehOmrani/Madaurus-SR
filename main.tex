@@ -1,0 +1,155 @@
+\documentclass{IEEEtran}
+\usepackage{enumitem}
+
+\begin{document}
+
+\title{Software Requirements Specification \for 
+ Madaurus e-Learning Platform}
+\author{
+Omrani Rabah \\
+Maroc abdelhakim fouad \\
+Ameri Mohamed ayoub \\
+Hannachi Seif elranhmane \\
+Hanaia youcef  \\
+Fendi Mohammed
+
+}
+\maketitle
+
+\section{Introduction}
+The advent of digital technologies has revolutionized various aspects of our lives, including education. Online learning platforms have emerged as powerful tools for delivering educational content to a wide audience, transcending geographical boundaries and time constraints. These platforms offer a flexible and convenient way for students to access course materials, interact with instructors, collaborate with peers, and track their progress.
+
+In recent years, the demand for online learning platforms has surged, driven by factors such as the proliferation of internet-enabled devices, the growing popularity of distance education, and the need for continuous skill development in a rapidly changing job market. As a result, universities and educational institutions are increasingly investing in the development and deployment of robust e-learning solutions to meet the evolving needs of their students and faculty members.
+
+The Madaurus e-Learning Platform is one such initiative aimed at providing a comprehensive and interactive online learning environment for students, teachers, and administrators at a computer science university. This platform offers a wide range of features and functionalities tailored to the unique requirements of each user role, thereby enhancing the teaching and learning experience for all stakeholders.
+
+In this paper, we present a detailed overview of the Madaurus e-Learning Platform, including its key features, user classes, operating environment, design and implementation constraints, and specific requirements. By understanding the requirements and objectives of the platform, developers can effectively design, develop, and deploy a scalable and user-friendly e-learning solution that meets the needs of its users.
+
+\section{Purpose}
+The purpose of the Madaurus e-Learning Platform is to provide an advanced and intuitive online educational environment tailored specifically to the needs of a computer science university. This platform aims to facilitate seamless access to educational resources and tools for students, instructors, and administrators, thereby enhancing the teaching and learning experience. By offering a diverse range of functionalities, including course materials, interactive lectures, quizzes, communication spaces, and administrative tools, the platform aims to foster collaboration, engagement, and academic success within the computer science community. Furthermore, the platform serves as a centralized hub for knowledge dissemination, skill development, and academic management, supporting the university's mission of delivering high-quality education in a flexible and accessible manner.
+\section{Scope}
+
+The scope of the Madaurus e-Learning Platform encompasses a comprehensive range of functionalities and considerations within a computer science university context. This includes detailed descriptions of its features for different user roles, such as students, teachers, and administrators, as well as the underlying technical infrastructure and integration with AI-based services. Moreover, it involves an evaluation of user experience aspects, including interface design, usability, and accessibility features, alongside its educational and administrative implications, such as supporting various content delivery methods, pedagogical approaches, and data management tasks. Furthermore, the scope extends to identifying potential areas for future development and collaboration to enhance the platform's functionality and impact on teaching, learning, and administrative processes.
+
+\section{Glossary}
+
+\section{References}
+\begin{itemize}
+    \item IEEE 830-1998
+\end{itemize}
+
+\section{Overall Description}
+The Madaurus e-Learning Platform will be a web-based application accessible to users through standard web browsers. It will offer features tailored to meet the needs of anonymous users, students, teachers, and administrators.
+
+\subsection{Product Perspective}
+The platform will operate as a standalone system, but it may integrate with existing university databases for user authentication and data management. It will also utilize external services for AI-based functionalities such as sentiment analysis and text summarization.
+
+\subsection{User Classes and Characteristics}
+\begin{itemize}[noitemsep]
+\item Anonymous Users: Visitors who have not logged in. They can preview courses, access school details, and external links. They also have the option to log in.
+\item Students: Registered users who can access courses, lectures, documents, quizzes, communication spaces, and educational tools. They can also submit assignments and participate in discussions.
+\item Teachers: Educators who can create, edit, and manage course materials, quizzes, lectures, and communication spaces. They have additional capabilities for managing student submissions and assessments.
+\item Administrators: Supervisors who oversee user management, course management, communication spaces, and data analysis. They have full access to all platform functionalities.
+\end{itemize}
+
+\subsection{Operating Environment}
+The platform will be accessible via web browsers on desktop and mobile devices. It will require an internet connection and support modern web technologies such as HTML5, CSS3, and JavaScript.
+
+\subsection{Design and Implementation Constraints}
+The platform must adhere to IEEE830-1998 standards for software requirements specification. It should also follow best practices for web application development, including responsive design and security protocols.
+
+\subsection{Assumptions and Dependencies}
+The platform assumes that users have basic knowledge of web browsing and computer usage. It also depends on external services for AI-based functionalities and may require integration with university systems for user authentication.
+
+\section{Specific Requirements}
+
+\subsection{External Interface Requirements}
+\subsubsection{User Interfaces}
+\begin{enumerate}[noitemsep]
+\item Login Page: Allows users to log in or register.
+\item Dashboard: Provides access to courses, lectures, documents, tools, and communication spaces.
+\item Course Page: Displays course materials, lectures, quizzes, and communication spaces.
+\item Teacher Panel: Enables teachers to create, edit, and manage course materials and communication spaces.
+\item Administrator Panel: Allows administrators to manage users, courses, communication spaces, and data analysis.
+\end{enumerate}
+
+\subsubsection{Hardware Interfaces}
+The platform requires standard hardware components such as servers, databases, and client devices (e.g., computers, smartphones, tablets).
+
+\subsubsection{Software Interfaces}
+The platform will integrate with university databases for user authentication and management. It will also utilize AI services for sentiment analysis, text summarization, and recommendation systems.
+
+\subsubsection{Communication Interfaces}
+The platform will communicate with external systems for authentication, data analysis, and AI services via HTTPS protocols.
+
+\subsection{Functional Requirements}
+
+\subsubsection{Anonymous Users}
+\begin{enumerate}[noitemsep]
+\item View Courses: Anonymous users can preview all courses offered by the university.
+\item Access School Details: Users can view information about the school and external links.
+\item Login: Anonymous users have the option to log in or register.
+\end{enumerate}
+
+\subsubsection{Students}
+\begin{enumerate}[noitemsep]
+\item Access Courses: Students can access course materials, lectures, and documents.
+\item Participate in Communication Spaces: Students can join forums and discussions.
+\item Use Educational Tools: Students can use tools such as an IDE, diagram editor, and note-taking interface.
+\item Submit Assignments: Students can submit tasks, quizzes, and homework assignments.
+\end{enumerate}
+
+\subsubsection{Teachers}
+\begin{enumerate}[noitemsep]
+\item Manage Course Materials: Teachers can add, edit, and delete course documents and lectures.
+\item Create Quizzes and Tasks: Teachers can create assessments and assignments for students.
+\item Present Lectures: Teachers can write and present lecture slides using an intuitive interface.
+\end{enumerate}
+
+\subsubsection{Administrators}
+\begin{enumerate}[noitemsep]
+\item Manage Users: Administrators can edit user profiles, roles, and permissions.
+\item Create Cohorts and Groups: Administrators can organize users into cohorts and groups.
+\item Analyze Data: Administrators have access to a dashboard for data analysis and insights.
+\item Manage Courses and Communication Spaces: Administrators can create, edit, and manage courses and communication spaces.
+\item Manage Project-Student Attribution: Administrators oversee project assignments and student allocations.
+\end{enumerate}
+
+\subsection{Non-functional Requirements}
+\subsubsection{Performance}
+The platform must be responsive and scalable to accommodate a large number of concurrent users.
+
+\subsubsection{Security}
+The platform must implement secure authentication mechanisms to protect user data and privacy.
+
+\subsubsection{Usability}
+The platform should have an intuitive user interface and provide clear instructions for navigation and usage.
+
+\subsubsection{Reliability}
+The platform should have a high level of availability and minimize downtime for maintenance.
+
+\subsubsection{Compatibility}
+The platform should be compatible with modern web browsers and accessible on different devices.
+
+\subsubsection{Maintainability}
+The platform should be modular and well-documented to facilitate future updates and maintenance.
+
+\subsubsection{Accessibility}
+The platform should adhere to accessibility standards to ensure usability for users with disabilities.
+
+\subsubsection{Scalability}
+The platform should be designed to handle increasing user loads and data volumes over time.
+
+\subsection{Other Requirements}
+\begin{enumerate}[noitemsep]
+\item Sentiment Analysis AI: Implement an AI algorithm for sentiment analysis of comments and communication spaces.
+\item Text Summarization AI: Implement an AI algorithm for summarizing course materials and lectures.
+\item Recommendation System: Implement an AI-based recommendation system for recommending forum posts based on student interests.
+\item Data Validation Utilities: Implement utilities for validating user input and data integrity.
+\item Semantic-Based Topic Search: Implement a search functionality based on semantic analysis of course materials.
+\end{enumerate}
+
+\section{Conclusion}
+This Software Requirements Specification provides a comprehensive outline of the Madaurus e-Learning Platform's functionalities and requirements. It serves as a guide for the development team to ensure the successful implementation of the platform.
+
+\end{document}
